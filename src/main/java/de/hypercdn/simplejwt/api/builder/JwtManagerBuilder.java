@@ -10,6 +10,7 @@ public interface JwtManagerBuilder extends Builder<JwtManager>{
 	 * Sets the issuer id the manager should be using
 	 *
 	 * @param issuerId to use
+	 *
 	 * @return current instance
 	 */
 	JwtManagerBuilder setIssuerId(String issuerId);
@@ -18,6 +19,7 @@ public interface JwtManagerBuilder extends Builder<JwtManager>{
 	 * Sets the global part of the signing bytes
 	 *
 	 * @param bytes global
+	 *
 	 * @return current instance
 	 */
 	JwtManagerBuilder setGlobalSigningBytes(byte[] bytes);
@@ -26,6 +28,7 @@ public interface JwtManagerBuilder extends Builder<JwtManager>{
 	 * Specifies provider to receive the jwt specific signing bytes
 	 *
 	 * @param signingBytesProvider to set
+	 *
 	 * @return current instance
 	 */
 	JwtManagerBuilder setJwtSigningBytesProvider(Function<String, byte[]> signingBytesProvider);

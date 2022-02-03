@@ -2,13 +2,14 @@ package de.hypercdn.simplejwt.api.helper;
 
 import org.json.JSONObject;
 
-public interface JsonContainer {
+public interface JsonContainer{
 
 	/**
 	 * Returns the value for a given key
 	 *
 	 * @param key to access
 	 * @param <T> generic
+	 *
 	 * @return value or null
 	 */
 	<T> T getValueFor(String key);
@@ -17,7 +18,8 @@ public interface JsonContainer {
 	 * Returns the value for a given common key
 	 *
 	 * @param commonKey to access
-	 * @param <T> generic
+	 * @param <T>       generic
+	 *
 	 * @return value or null
 	 */
 	default <T> T getValueFor(CommonKey commonKey){
@@ -27,9 +29,10 @@ public interface JsonContainer {
 	/**
 	 * Returns the value for a given key tries to cast it to the provided type
 	 *
-	 * @param key to access
+	 * @param key    to access
 	 * @param tClass of the value type
-	 * @param <T> generic
+	 * @param <T>    generic
+	 *
 	 * @return value or null
 	 */
 	<T> T getValueFor(String key, Class<T> tClass);

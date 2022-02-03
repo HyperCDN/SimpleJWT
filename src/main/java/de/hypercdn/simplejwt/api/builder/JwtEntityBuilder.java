@@ -15,6 +15,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the subject field of the jwt
 	 *
 	 * @param sub ject
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder setSubject(String sub);
@@ -23,6 +24,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the audience field of the jwt
 	 *
 	 * @param aud ience
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder setAudience(String aud);
@@ -31,6 +33,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the expiration date of the jwt
 	 *
 	 * @param duration as offset from when the set call has been made
+	 *
 	 * @return current instance
 	 */
 	default JwtEntityBuilder setExpiration(Duration duration){
@@ -43,6 +46,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the expiration of the jwt
 	 *
 	 * @param localDateTime as timestamp
+	 *
 	 * @return current instance
 	 */
 	default JwtEntityBuilder setExpiration(LocalDateTime localDateTime){
@@ -55,6 +59,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the expiration of the jwt
 	 *
 	 * @param exp iration
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder setExpiration(Date exp);
@@ -63,6 +68,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the "not before" field of the jwt
 	 *
 	 * @param duration as offset from when the set call has been made
+	 *
 	 * @return current instance
 	 */
 	default JwtEntityBuilder setNotBefore(Duration duration){
@@ -75,6 +81,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the "not before" field of the jwt
 	 *
 	 * @param localDateTime as timestamp
+	 *
 	 * @return current instance
 	 */
 	default JwtEntityBuilder setNotBefore(LocalDateTime localDateTime){
@@ -87,6 +94,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Sets the "not before" field of the jwt
 	 *
 	 * @param nbf not before
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder setNotBefore(Date nbf);
@@ -95,6 +103,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Adds the provided data structures to the header
 	 *
 	 * @param jsonObject to copy contents into the header
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder addHeader(JSONObject jsonObject);
@@ -103,6 +112,7 @@ public interface JwtEntityBuilder extends Builder<JwtEntity>{
 	 * Adds the provided data structures to the claims
 	 *
 	 * @param jsonObject to copy contents into the claims
+	 *
 	 * @return current instance
 	 */
 	JwtEntityBuilder addClaims(JSONObject jsonObject);

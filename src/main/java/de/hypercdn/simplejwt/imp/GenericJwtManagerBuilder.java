@@ -9,11 +9,11 @@ import java.util.function.Function;
 
 /**
  * Generic implementation of a jwt manager
- *
+ * <p>
  * If no issuer id is set, a random uuid will be used instead
  * If no global signing bytes have been provider, 1024 random bytes will be used instead
  * If no jwt signing bytes provider has been set, a generic one providing 1024 random bytes will be used instead
- *
+ * <p>
  * If no global signing bytes have been provided,
  */
 public class GenericJwtManagerBuilder implements JwtManagerBuilder{

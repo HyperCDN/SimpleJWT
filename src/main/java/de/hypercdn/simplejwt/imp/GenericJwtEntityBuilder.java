@@ -26,8 +26,8 @@ public class GenericJwtEntityBuilder implements JwtEntityBuilder{
 	private Date expiration = null;
 	private Date notBefore = null;
 
-	private JSONObject claims = new JSONObject();
-	private JSONObject header = new JSONObject();
+	private final JSONObject claims = new JSONObject();
+	private final JSONObject header = new JSONObject();
 
 	public GenericJwtEntityBuilder(JwtManager jwtEntityManager){
 		this.jwtEntityManager = jwtEntityManager;

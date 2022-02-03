@@ -9,10 +9,9 @@ import de.hypercdn.simplejwt.api.helper.JsonContainer;
 public interface Header extends JsonContainer{
 
 	enum Common implements CommonKey{
-			TYPE("typ", String.class),
-			CONTENT_TYPE("cty", String.class),
-			ALGORITHM("alg", String.class)
-		;
+		TYPE("typ", String.class),
+		CONTENT_TYPE("cty", String.class),
+		ALGORITHM("alg", String.class);
 
 		private final String key;
 		private final Class<?> type;

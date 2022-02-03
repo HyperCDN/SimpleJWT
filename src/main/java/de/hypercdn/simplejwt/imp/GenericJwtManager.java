@@ -36,13 +36,14 @@ public class GenericJwtManager implements JwtManager{
 		this.jwtSigningBytesProvider = jwtSigningBytesProvider;
 		ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
 		executor.scheduleAtFixedRate(() -> {
-			try {
+			try{
 				for(var entry : jwtSigningByteStore.entrySet()){
 					if(Instant.now().isAfter(entry.getValue().b())){
 						jwtSigningByteStore.remove(entry.getKey());
 					}
 				}
-			}catch(Exception e){
+			}
+			catch(Exception e){
 				e.printStackTrace();
 			}
 		}, 1, 1, TimeUnit.MINUTES);
@@ -70,13 +71,14 @@ public class GenericJwtManager implements JwtManager{
 		if(!getIssuerId().equals(iss) || signingKey == null){
 			return false;
 		}
-		try {
+		try{
 			Jwts.parserBuilder()
 				.setSigningKey(signingKey)
 				.build()
 				.parse(jwtEntity.asJwtString());
 			return true;
-		}catch(Exception e){
+		}
+		catch(Exception e){
 			return false;
 		}
 	}
@@ -116,4 +118,5 @@ public class GenericJwtManager implements JwtManager{
 	public void setSigningBytesFor(String jti, byte[] bytes, Duration duration){
 		jwtSigningByteStore.put(jti, new Pair<>(bytes, Instant.now().plus(duration)));
 	}
+
 }

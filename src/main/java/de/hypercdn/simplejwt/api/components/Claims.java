@@ -9,13 +9,13 @@ import de.hypercdn.simplejwt.api.helper.JsonContainer;
 public interface Claims extends JsonContainer{
 
 	enum Common implements CommonKey{
-			ISSUER("iss", String.class),
-			SUBJECT("sub", String.class),
-			AUDIENCE("aud", String.class),
-			EXPIRATION_TIME("exp", Long.class),
-			NOT_BEFORE("nbf", Long.class),
-			ISSUED_AT("iat", Long.class),
-			JWT_ID("jti", String.class),
+		ISSUER("iss", String.class),
+		SUBJECT("sub", String.class),
+		AUDIENCE("aud", String.class),
+		EXPIRATION_TIME("exp", Long.class),
+		NOT_BEFORE("nbf", Long.class),
+		ISSUED_AT("iat", Long.class),
+		JWT_ID("jti", String.class),
 		;
 
 		private final String key;
