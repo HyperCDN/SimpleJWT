@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'de.hypercdn.simplejwt'
+version '1.0.0.' + System.getenv("BUILD_NUMBER")
+sourceCompatibility = 17
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // JWT
+
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.2'
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api
+    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.2'
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-orgjson
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-orgjson', version: '0.11.2'
+
+    // JSON
+
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20211205'
+}
+
+test {
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'hours'
+    resolutionStrategy.cacheDynamicVersionsFor 0, 'hours'
+}
+
+shadowJar {
+    archiveClassifier.set("")
+}
+
+publishing {
+    repositories {
+        maven {
+            credentials {
+                username findProperty("nexusu") as String
+                password findProperty("nexusp") as String
+            }
+            url "https://cd.voigt.app/repository/maven-voigt/"
+        }
+    }
+    publications {
+        maven(MavenPublication) {
+            artifact(tasks["shadowJar"])
+            pom {
+                name = 'SimpleJWT'
+                description = ''
+                url = 'https://github.com/HyperCDN/SimpleJWT'
+
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/HyperCDN/SimpleJWT'
+                    developerConnection = 'scm:git:ssh:git@github.com:HyperCDN/SimpleJWT'
+                    url = 'https://github.com/HyperCDN/SimpleJWT'
+                }
+            }
+        }
+    }
+}
