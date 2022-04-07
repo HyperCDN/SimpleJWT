@@ -28,6 +28,13 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.json/json
     implementation group: 'org.json', name: 'json', version: '20220320'
+
+    jar {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        from {
+            configurations.compileClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+        }
+    }
 }
 
 test {
@@ -54,7 +61,8 @@ publishing {
     }
     publications {
         maven(MavenPublication) {
-            artifact(tasks["shadowJar"])
+            //artifact(tasks["shadowJar"])
+            from components.java
             pom {
                 name = 'SimpleJWT'
                 description = ''
