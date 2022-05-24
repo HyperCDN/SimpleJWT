@@ -2,7 +2,7 @@
 ###### Utility to easily manage JWT
 
 [![Generic badge](https://img.shields.io/badge/Java-17-white.svg)]()
-[![Generic badge](https://img.shields.io/nexus/r/de.hypercdn.simplejwt/SimpleJWT?color=white&label=Latest%20Version&nexusVersion=3&server=https%3A%2F%2Fcd.voigt.app%2F)]()
+[![Generic badge](https://img.shields.io/nexus/r/de.hypercdn.simple/JWT?color=white&label=Latest%20Version&nexusVersion=3&server=https%3A%2F%2Fcd.voigt.app%2F)]()
 
 ## Installation
 Grab the latest version from our [Nexus-Proxy](https://nexus.hypercdn.de/) using Gradle or Maven.  
