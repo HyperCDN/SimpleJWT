@@ -1,6 +1,6 @@
-package de.hypercdn.simplejwt.imp.components;
+package de.hypercdn.simple.jwt.imp.components;
 
-import de.hypercdn.simplejwt.api.components.Signature;
+import de.hypercdn.simple.jwt.api.components.Signature;
 
 import java.util.Objects;
 

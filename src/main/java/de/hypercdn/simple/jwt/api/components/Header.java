@@ -1,7 +1,7 @@
-package de.hypercdn.simplejwt.api.components;
+package de.hypercdn.simple.jwt.api.components;
 
-import de.hypercdn.simplejwt.api.helper.CommonKey;
-import de.hypercdn.simplejwt.api.helper.JsonContainer;
+import de.hypercdn.simple.jwt.api.helper.CommonKey;
+import de.hypercdn.simple.jwt.api.helper.JsonContainer;
 
 /**
  * Represents the header part of a jwt

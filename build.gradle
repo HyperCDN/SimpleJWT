@@ -4,7 +4,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-group 'de.hypercdn.simplejwt'
+group 'de.hypercdn.simple'
 version '1.0.0.' + System.getenv("BUILD_NUMBER")
 sourceCompatibility = 17
 compileJava.options.encoding = 'UTF-8'
@@ -64,8 +64,8 @@ publishing {
             //artifact(tasks["shadowJar"])
             from components.java
             pom {
-                name = 'SimpleJWT'
-                description = ''
+                name = 'JWT'
+                description = 'Utility to easily manage JWT'
                 url = 'https://github.com/HyperCDN/SimpleJWT'
 
                 licenses {

@@ -1,4 +1,4 @@
-package de.hypercdn.simplejwt.imp.exception;
+package de.hypercdn.simple.jwt.imp.exception;
 
 public class JwtException extends RuntimeException{
 

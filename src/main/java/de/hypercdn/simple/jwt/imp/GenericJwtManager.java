@@ -1,10 +1,10 @@
-package de.hypercdn.simplejwt.imp;
+package de.hypercdn.simple.jwt.imp;
 
-import de.hypercdn.simplejwt.api.JwtEntity;
-import de.hypercdn.simplejwt.api.JwtManager;
-import de.hypercdn.simplejwt.api.builder.JwtEntityBuilder;
-import de.hypercdn.simplejwt.imp.exception.JwtException;
-import de.hypercdn.simplejwt.utils.Pair;
+import de.hypercdn.simple.jwt.api.JwtEntity;
+import de.hypercdn.simple.jwt.api.JwtManager;
+import de.hypercdn.simple.jwt.api.builder.JwtEntityBuilder;
+import de.hypercdn.simple.jwt.imp.exception.JwtException;
+import de.hypercdn.simple.jwt.utils.Pair;
 import io.jsonwebtoken.Jwts;
 
 import java.time.Duration;
@@ -16,8 +16,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-import static de.hypercdn.simplejwt.api.components.Claims.Common.ISSUER;
-import static de.hypercdn.simplejwt.api.components.Claims.Common.JWT_ID;
+import static de.hypercdn.simple.jwt.api.components.Claims.Common.ISSUER;
+import static de.hypercdn.simple.jwt.api.components.Claims.Common.JWT_ID;
 
 /**
  * Generic implementation of a jwt manager

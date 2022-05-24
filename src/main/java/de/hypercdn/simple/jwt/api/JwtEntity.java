@@ -1,13 +1,13 @@
-package de.hypercdn.simplejwt.api;
+package de.hypercdn.simple.jwt.api;
 
-import de.hypercdn.simplejwt.api.components.Claims;
-import de.hypercdn.simplejwt.api.components.Header;
-import de.hypercdn.simplejwt.api.components.Signature;
-import de.hypercdn.simplejwt.imp.GenericJwtEntity;
-import de.hypercdn.simplejwt.imp.components.GenericClaims;
-import de.hypercdn.simplejwt.imp.components.GenericHeader;
-import de.hypercdn.simplejwt.imp.components.GenericSignature;
-import de.hypercdn.simplejwt.imp.exception.JwtException;
+import de.hypercdn.simple.jwt.api.components.Claims;
+import de.hypercdn.simple.jwt.api.components.Header;
+import de.hypercdn.simple.jwt.api.components.Signature;
+import de.hypercdn.simple.jwt.imp.GenericJwtEntity;
+import de.hypercdn.simple.jwt.imp.components.GenericClaims;
+import de.hypercdn.simple.jwt.imp.components.GenericHeader;
+import de.hypercdn.simple.jwt.imp.components.GenericSignature;
+import de.hypercdn.simple.jwt.imp.exception.JwtException;
 import org.json.JSONObject;
 
 import java.util.Base64;

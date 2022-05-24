@@ -1,9 +1,9 @@
-package de.hypercdn.simplejwt.imp;
+package de.hypercdn.simple.jwt.imp;
 
-import de.hypercdn.simplejwt.api.JwtEntity;
-import de.hypercdn.simplejwt.api.components.Claims;
-import de.hypercdn.simplejwt.api.components.Header;
-import de.hypercdn.simplejwt.api.components.Signature;
+import de.hypercdn.simple.jwt.api.JwtEntity;
+import de.hypercdn.simple.jwt.api.components.Claims;
+import de.hypercdn.simple.jwt.api.components.Header;
+import de.hypercdn.simple.jwt.api.components.Signature;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

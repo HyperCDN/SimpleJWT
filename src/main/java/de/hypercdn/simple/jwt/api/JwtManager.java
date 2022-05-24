@@ -1,8 +1,8 @@
-package de.hypercdn.simplejwt.api;
+package de.hypercdn.simple.jwt.api;
 
-import de.hypercdn.simplejwt.api.builder.JwtEntityBuilder;
-import de.hypercdn.simplejwt.api.components.Claims;
-import de.hypercdn.simplejwt.imp.exception.JwtException;
+import de.hypercdn.simple.jwt.api.builder.JwtEntityBuilder;
+import de.hypercdn.simple.jwt.api.components.Claims;
+import de.hypercdn.simple.jwt.imp.exception.JwtException;
 
 import java.time.Duration;
 import java.util.Objects;

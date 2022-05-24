@@ -1,6 +1,6 @@
-package de.hypercdn.simplejwt.api.builder;
+package de.hypercdn.simple.jwt.api.builder;
 
-import de.hypercdn.simplejwt.api.JwtEntity;
+import de.hypercdn.simple.jwt.api.JwtEntity;
 import org.json.JSONObject;
 
 import java.time.Duration;

@@ -1,6 +1,6 @@
-package de.hypercdn.simplejwt.imp.components;
+package de.hypercdn.simple.jwt.imp.components;
 
-import de.hypercdn.simplejwt.api.components.Claims;
+import de.hypercdn.simple.jwt.api.components.Claims;
 import org.json.JSONObject;
 
 public class GenericClaims implements Claims{

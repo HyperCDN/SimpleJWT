@@ -1,6 +1,6 @@
-package de.hypercdn.simplejwt.imp.components;
+package de.hypercdn.simple.jwt.imp.components;
 
-import de.hypercdn.simplejwt.api.components.Header;
+import de.hypercdn.simple.jwt.api.components.Header;
 import org.json.JSONObject;
 
 public class GenericHeader implements Header{

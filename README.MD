@@ -21,7 +21,7 @@ repositories {
 ```
 ```groovy
 dependencies {
-    implementation group: 'de.hypercdn.simplejwt', name: 'SimpleJWT', version: 'REPLACE WITH LATEST VERSION'
+    implementation group: 'de.hypercdn.simple', name: 'JWT', version: 'REPLACE WITH LATEST VERSION'
 }
 ```
 
@@ -35,11 +35,13 @@ dependencies {
     </repository>
 </repositories>
 ```
+
 ```xml
+
 <dependencies>
     <dependency>
-        <groupId>de.hypercdn.simplejwt</groupId>
-        <artifactId>SimpleJWT</artifactId>
+        <groupId>de.hypercdn.simple</groupId>
+        <artifactId>JWT</artifactId>
         <version>REPLACE WITH LATEST VERSION</version>
     </dependency>
 </dependencies>

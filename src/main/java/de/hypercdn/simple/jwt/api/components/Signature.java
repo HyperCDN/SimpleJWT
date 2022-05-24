@@ -1,4 +1,4 @@
-package de.hypercdn.simplejwt.api.components;
+package de.hypercdn.simple.jwt.api.components;
 
 /**
  * Represents the signature part of a jwt

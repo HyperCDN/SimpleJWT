@@ -1,7 +1,7 @@
-package de.hypercdn.simplejwt.imp;
+package de.hypercdn.simple.jwt.imp;
 
-import de.hypercdn.simplejwt.api.JwtManager;
-import de.hypercdn.simplejwt.api.builder.JwtManagerBuilder;
+import de.hypercdn.simple.jwt.api.JwtManager;
+import de.hypercdn.simple.jwt.api.builder.JwtManagerBuilder;
 
 import java.security.SecureRandom;
 import java.util.UUID;

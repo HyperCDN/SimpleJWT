@@ -1,4 +1,4 @@
-package de.hypercdn.simplejwt.api.helper;
+package de.hypercdn.simple.jwt.api.helper;
 
 import org.json.JSONObject;
 

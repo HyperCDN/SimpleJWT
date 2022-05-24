@@ -1,4 +1,4 @@
-package de.hypercdn.simplejwt.api.builder;
+package de.hypercdn.simple.jwt.api.builder;
 
 public interface Builder<T>{
 

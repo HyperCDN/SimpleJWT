@@ -1,9 +1,9 @@
-package de.hypercdn.simplejwt.imp;
+package de.hypercdn.simple.jwt.imp;
 
-import de.hypercdn.simplejwt.api.JwtEntity;
-import de.hypercdn.simplejwt.api.JwtManager;
-import de.hypercdn.simplejwt.api.builder.JwtEntityBuilder;
-import de.hypercdn.simplejwt.imp.exception.JwtException;
+import de.hypercdn.simple.jwt.api.JwtEntity;
+import de.hypercdn.simple.jwt.api.JwtManager;
+import de.hypercdn.simple.jwt.api.builder.JwtEntityBuilder;
+import de.hypercdn.simple.jwt.imp.exception.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.json.JSONObject;

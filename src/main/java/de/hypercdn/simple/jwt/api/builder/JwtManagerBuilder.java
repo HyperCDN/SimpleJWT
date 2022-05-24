@@ -1,6 +1,6 @@
-package de.hypercdn.simplejwt.api.builder;
+package de.hypercdn.simple.jwt.api.builder;
 
-import de.hypercdn.simplejwt.api.JwtManager;
+import de.hypercdn.simple.jwt.api.JwtManager;
 
 import java.util.function.Function;
 
